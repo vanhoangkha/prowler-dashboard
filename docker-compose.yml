@@ -33,7 +33,7 @@ services:
       - path: .env
         required: false
     ports:
-      - ${UI_PORT:-3000}:${UI_PORT:-3000}
+      - 80:3000
     depends_on:
       mcp-server:
         condition: service_healthy
